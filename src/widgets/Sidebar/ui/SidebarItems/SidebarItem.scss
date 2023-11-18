@@ -1,0 +1,9 @@
+.collapsed-items {
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+
+    .item {
+        margin-left: 10px
+    }
+}

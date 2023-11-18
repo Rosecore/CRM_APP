@@ -1,0 +1,76 @@
+@import 'reset.scss';
+
+:root {
+    --font-family-main: 'Montserrat', sans-serif;
+    --font-size-regular: 20px;
+    --font-weight-regular: 600;
+    --font-weight-header: 700;
+    --font-weight-text: 400;
+
+    --navbar-height: 70px;
+    --sidebar-width: 300px;
+
+    --first-color: #4F27BF;
+    --first-color-light: #8066c9;
+    --background-color: #fff;
+    --font-color: black;
+    --shadow-color: #02006140;
+    --border-color: #D7D7D7;
+
+    --headers-text-paddings: 10px
+}
+
+body {
+    color: var(--font-color);
+    min-height: 100vh;
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--first-color-light);
+    border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color);
+}
+
+.mainapp {
+    max-width: 1440px;
+    margin: 0 auto;
+    max-height: 1024px;
+}
+
+.app {
+    background: var(--bg-color);
+
+}
+
+.content-page {
+    display: flex;
+}
+
+.page-wrapper {
+    flex-grow: 1;
+    padding: 40px 20px 0 30px;
+    height: calc(100vh - var(--navbar-height));
+    width: calc(100% - var(--sidebar-width));
+    overflow-y: auto;
+}
+@media screen and (max-width:768px) {
+    .page-wrapper {
+        width: 100%;
+    }
+}
