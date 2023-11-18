@@ -10,6 +10,18 @@
         margin-left: 10px;
     }
 }
+@media screen and (max-width:768px) {
+    .left-side{
+        h3{
+            display: none
+        }
+    }
+    .right-side{
+        h3{
+            display: none;
+        }
+    }
+}
 
 .left-side{
     width: 100%;

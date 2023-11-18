@@ -29,7 +29,7 @@ export const SidebarItemList: SidebarItemType[] =
         icon: MainPageIcon,
     },
     {
-        text: "Поиск Адресов",
+        text: "Поиск адресов",
         icon: SearchIcon,
         path: RoutePath.address,
     },

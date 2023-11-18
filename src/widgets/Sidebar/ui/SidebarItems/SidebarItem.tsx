@@ -23,13 +23,11 @@ export const SidebarItem = ({ item, collapsabple }: SidebarItemProps) => {
                     </span>
                     {collapsed && <div>{">"}</div>}
                 </div>
-                {!collapsed &&
-                    (<div className='collapsed-items'>
-                        {item.itemsMap?.map(el => (
-                            <LinkItem el={el} />
-                        ))}
-                    </div>)
-                }
+                <div className={collapsed ? 'collapsed' : 'collapsed-items'}>
+                    {item.itemsMap?.map(el => (
+                        <LinkItem el={el} />
+                    ))}
+                </div>
             </>)
     }
     else return (
