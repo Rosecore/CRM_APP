@@ -1,0 +1,19 @@
+{
+    "lang": "ru",
+    "dir": "ltr",
+    "name": "Wrench CRM",
+    "short_name": "WCTM",
+    "icons": [{
+      "src": "icon.svg",
+      "sizes": "64x64",
+      "type": "image/webp"
+    }, {
+      "src": "icon_med.svg",
+      "sizes": "144x144"
+    }],
+    "scope": "/",
+    "id": "wrench_csrm",
+    "start_url": "/",
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
