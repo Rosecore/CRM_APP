@@ -1,3 +1,3 @@
-import AdressSearching from "./ui/AdressSearching";
+import AdressSearching from "./ui/AddressSearching";
 
 export {AdressSearching}

@@ -8,10 +8,10 @@ export const Navbar = memo(() => {
     return (
         <header className='navbar'>
             <span className='left-side'>
-            <CompanyLogo/><h3>Wrench CRM</h3>
+                <CompanyLogo/><h3>Wrench CRM</h3>
             </span>
             <span className='right-side'>
-            <PersonIcon/><h3>Имя Фамилия</h3>
+                <PersonIcon/><h3>Имя Фамилия</h3>
             </span>
 
 

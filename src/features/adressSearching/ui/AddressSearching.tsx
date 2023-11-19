@@ -1,8 +1,7 @@
 import React, { memo, useState } from 'react';
-import { adressSearching } from '../model/services/adressSearching/adressSearching';
+import { adressSearching } from '../model/services/adressSearching/addressSearching';
 import { resultType } from '../model/types/infoType';
-import './AdressSearching.scss';
-
+import './AddressSearching.scss';
 
 
 const AdressSearching = memo(() => {

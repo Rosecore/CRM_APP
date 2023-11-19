@@ -5,14 +5,12 @@ import { useDispatch } from 'react-redux';
 import AppRouter from './router/AppRouter';
 const App = () => {
     return (
-        <div className='mainapp'>          
-                <Navbar/>
-                <div className='content-page'>
-                    <Sidebar/>
-                    <AppRouter />
-                </div>
-
-           
+        <div className='mainapp'>
+            <Navbar />
+            <div className='content-page'>
+                <Sidebar />
+                <AppRouter />
+            </div>
         </div>
     );
 };
