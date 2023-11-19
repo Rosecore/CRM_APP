@@ -1,6 +1,7 @@
 import React, { memo, useState } from 'react';
 import { adressSearching } from '../model/services/adressSearching/addressSearching';
 import { resultType } from '../model/types/infoType';
+import SearchIcon from "shared/icons/search.svg"
 import './AddressSearching.scss';
 
 
@@ -20,9 +21,12 @@ const AdressSearching = memo(() => {
         <>
             <h2>Поиск адресов</h2>
             <h3>Введите интересующий вас адрес</h3>
-            <form>
-                <input type="text" minLength={3} className='adress-input' onChange={updateInputValue}></input>
-                <button type='submit' className='adress-button' disabled={inputValue.length > 2 ? false : true} onClick={searchAdress}>Поиск</button>
+            <form className='input-form'>
+                <input type="text" minLength={3} className='input-form__adress-input' onChange={updateInputValue}></input>
+                <button type='submit' className='input-form__adress-button' disabled={inputValue.length > 2 ? false : true} onClick={searchAdress}>
+                    <p className='adress-button__inner-text'>Поиск</p>
+                    <SearchIcon className='adress-button__icon'/>
+                </button>
             </form>
             {resultValue ?
                 <table className='adress-table'>
